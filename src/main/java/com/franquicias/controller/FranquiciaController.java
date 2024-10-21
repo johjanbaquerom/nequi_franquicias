@@ -48,4 +48,9 @@ public class FranquiciaController {
         franquiciaService.eliminarFranquicia(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/test")
+    public ResponseEntity<String> test() {
+        return ResponseEntity.ok("Endpoint funcionando");
+    }
 }
